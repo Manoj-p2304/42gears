@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lorem, ipsum dolor</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="fonts/fontawesome/css/all.min.css">
+</head>
+
+<body>
+    <div id="sidebar" class="sidebar">
+        <div class="sidebar-header2">
+            <img style="border-radius: 55px;" src="/img/lorem.avif" alt="Company Logo" class="company-logo1" />
+        </div>
+        <div class="sidebar-header1">
+            <h2 class="company-name">Branding</h2>
+        </div>
+
+        <ul class="sidebar-options1">
+            <li class="sidebar-option1">
+                <a href="">
+                    <i class="fas fa-user icon"></i>
+                    <span class="text">Lorem Ipsum</span>
+                </a>
+            </li>
+            <li class="sidebar-option1">
+                <a href="">
+                    <i class="fas fa-box icon"></i>
+                    <span class="text">Lorem Ipsum</span>
+                </a>
+            </li>
+            <li class="sidebar-option1">
+                <a href="">
+                    <i class="fas fa-clipboard icon"></i>
+                    <span class="text">Lorem Ipsum</span>
+                </a>
+                <span class="toggle-icon" id="toggle-buffer-stock">
+                    <i class="fas fa-chevron-down"></i>
+                </span>
+                <ul class="nested-options" id="buffer-stock-options">
+                    <li class="sidebar-option1">
+                        <a href="">
+                            <i class="fas fa-bag-check icon"></i>
+                            <span class="text">Lorem Ipsum</span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li class="sidebar-option1">
+                <a href="">
+                    <i class="fas fa-check-circle icon"></i>
+                    <span class="text">Lorem Ipsum</span>
+                </a>
+            </li>
+        </ul>
+
+        <a href="/" id="logout-link">
+            <button class="logout-button">Logout</button>
+        </a>
+
+        <div class="sidebar-footer">
+            <p>&copy; 2024 Lorem ipsum dolor sit amet.</p>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <div class="navbar">
+            <div class="navbar-right">
+                <i class="fa fa-bell"></i>
+                <i class="fa fa-envelope"></i>
+                <i class="fa fa-cog"></i>
+            </div>
+        </div>
+
+        <div class="toolbar">
+            <button class="btn">Button</button>
+            <button class="btn refresh" id="refresh-button">
+                <i class="fa-solid fa-rotate refresh-icon"></i> Refresh
+            </button>
+                <button class="btn edit" disabled>Edit</button>
+                <button class="btn delete" disabled>Delete</button>
+                <input type="text" id="search-bar" placeholder="Search..." class="search-input" />
+        </div>
+
+        <div class="table-container">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th><input type="checkbox" id="select-all"></th>
+                        <th>ID No.</th>
+                        <th>Name</th>
+                        <th>Email ID</th>
+                        <th>Date</th>
+                        <th>Tags</th>
+                    </tr>
+                </thead>
+                <tbody id="table-body">
+                </tbody>
+            </table>
+
+            <div class="pagination">
+                <span>Items per page: 
+                    <select id="items-per-page">
+                        <option value="10">10</option>
+                        <option value="20">20</option>
+                        <option value="30">30</option>
+                    </select>
+                </span>
+                <div class="pagination-buttons">
+                    <button disabled>&lt;&lt;</button>
+                    <button>&lt;</button>
+                    <span>1 of 2</span>
+                    <button>&gt;</button>
+                    <button>&gt;&gt;</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
